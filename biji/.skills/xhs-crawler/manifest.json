@@ -1,0 +1,14 @@
+{
+  "name": "xhs-crawler",
+  "version": "1.0.0",
+  "description": "小红书爆款内容抓取技能。支持接管已登录浏览器，自动搜索、滚动加载、点击详情并下载图文素材。",
+  "author": "AI Developer",
+  "entry": "crawler.ts",
+  "commands": {
+    "run": "bun run crawler.ts"
+  },
+  "requirements": {
+    "chrome": "Required with --remote-debugging-port=9222",
+    "runtime": "Bun or Node.js"
+  }
+}

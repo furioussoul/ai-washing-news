@@ -8,5 +8,9 @@
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "puppeteer": "^24.38.0",
+    "puppeteer-core": "^24.38.0"
   }
 }

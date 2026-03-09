@@ -1,0 +1,25 @@
+{
+  "name": "xiaohongshu",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "start": "remotion studio src/index.ts",
+    "render": "remotion render XhsPoster src/index.ts out/video.mp4",
+    "still": "remotion still XhsPoster src/index.ts"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.434",
+    "autoprefixer": "^10.4.27",
+    "lucide-react": "^0.577.0",
+    "postcss": "^8.5.8",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.434",
+    "tailwindcss": "^4.2.1"
+  }
+}

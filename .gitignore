@@ -1,1 +1,6 @@
 .history
+chrome-user-data
+biji/venv
+node_modules
+.gitignore
+bun.lock

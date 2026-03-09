@@ -1,0 +1,20 @@
+标题: 让我非常震撼的 OpenClaw 玩法。
+
+内容:
+手欠！升级了openclaw龙虾v2026.3.2版本，变人工智障了
+	
+新版本加强了权限控制：
+	
+默认工具配置切换为“messaging”模式（新安装默认tools.profile = messaging）
+	
+必须手动更改，内置的 tools.profile 有以下几种：
+	
+•  messaging（v2026.3.2+ 新安装默认）只允许 messaging 相关工具 + 会话管理（发消息、查看历史、session_status 等）。最安全，适合纯聊天/跨平台消息场景，不允许读写文件、执行命令。
+•  coding包含文件系统（group:fs）、运行时（group:runtime）、会话、记忆、图像等工具。适合写代码、编辑文件、运行脚本的开发/自动化场景。
+•  minimal只允许 session_status（查看会话状态）。极度受限，几乎什么都不能做，适合 heartbeat、安全测试或纯观察模式。
+•  full（或不设置 profile）无任何限制，允许所有工具（包括 exec、bash、browser、cron 等高危工具）。最强大但风险最高，只在可信环境或已加 sandbox 时用。
+	
+配置文件路径通常是：
+~/.openclaw/openclaw.json（或容器/Docker 映射的对应路径）
+	
+#openclaw

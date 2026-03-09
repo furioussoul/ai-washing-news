@@ -1,0 +1,20 @@
+{
+  "name": "openclaw-note",
+  "private": true,
+  "scripts": {
+    "start": "remotion studio src/index.tsx",
+    "render": "remotion still src/index.tsx OpenclawNote out/openclaw.jpg --overwrite"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.434",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.434"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
