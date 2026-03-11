@@ -356,6 +356,44 @@ const P12_AIEfficiency: React.FC = () => (
   </PageLayout>
 );
 
+// P13: Twitter Style Efficiency
+const P13_TwitterStyle: React.FC = () => {
+  return (
+    <AbsoluteFill style={{ backgroundColor: '#fff', padding: '100px', display: 'flex', flexDirection: 'column', color: '#000', fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif' }}>
+      <div style={{ display: 'flex', alignItems: 'center', marginBottom: 40 }}>
+        <div style={{ width: 120, height: 120, borderRadius: '50%', overflow: 'hidden', marginRight: 24 }}>
+          <Img src={staticFile("jojo.jpg")} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+        </div>
+        <div>
+          <div style={{ fontSize: 48, fontWeight: 800 }}>杰哥 @ AI Team</div>
+          <div style={{ fontSize: 36, color: '#666' }}>@geralt_ai</div>
+        </div>
+      </div>
+      
+      <div style={{ fontSize: 72, fontWeight: 700, lineHeight: 1.3, marginBottom: 80, wordBreak: 'break-word' }}>
+        AI 提效的本质不是「替代」，而是「杠杆」。<br/><br/>
+        1. 自动化重复任务 (80% 降本)<br/>
+        2. 辅助复杂思考 (200% 增效)<br/>
+        3. 闭环反馈迭代 (持续进化)<br/><br/>
+        未来的竞争力，属于那些会用 AI 撬动工作的人。🚀
+      </div>
+      
+      <div style={{ marginTop: 'auto', borderTop: '2px solid #eee', paddingTop: 40, display: 'flex', gap: 60, fontSize: 36, color: '#666', fontWeight: 600 }}>
+        <span>2:49 PM · Mar 11, 2026</span>
+        <span style={{ color: '#000' }}><b>1.2M</b> Views</span>
+      </div>
+      
+      <div style={{ borderTop: '2px solid #eee', marginTop: 40, paddingTop: 40, display: 'flex', justifyContent: 'space-between', fontSize: 36, color: '#666' }}>
+        <span>💬 892</span>
+        <span>🔁 12.5K</span>
+        <span>❤️ 45.2K</span>
+        <span>🔖 8.1K</span>
+        <span>📤</span>
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 // ============================================
 // Root
 // ============================================
@@ -374,6 +412,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="p10-trace" component={P10_Langfuse} durationInFrames={1} fps={30} width={1080} height={1440} />
       <Composition id="p11-conclusion" component={P11_Conclusion} durationInFrames={1} fps={30} width={1080} height={1440} />
       <Composition id="p12-ai-efficiency" component={P12_AIEfficiency} durationInFrames={1} fps={30} width={1080} height={1440} />
+      <Composition id="p13-twitter-efficiency" component={P13_TwitterStyle} durationInFrames={1} fps={30} width={1080} height={1440} />
     </>
   );
 };
