@@ -326,6 +326,36 @@ const P11_Conclusion: React.FC = () => (
   </PageLayout>
 );
 
+// P12: AI Efficiency
+const P12_AIEfficiency: React.FC = () => (
+  <PageLayout>
+    <div style={{ fontSize: 80, fontWeight: 900, marginBottom: 60 }}>
+      AI 提效的<br/>
+      <Highlighter color="#60A5FA">三个核心维度</Highlighter>
+    </div>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '30px' }}>
+      <Sticker>
+        <div style={{ fontSize: 44, fontWeight: 900, color: '#000', marginBottom: 15 }}>1. 自动化重复任务 ⚡️</div>
+        <div style={{ fontSize: 32, fontWeight: 700, color: '#555' }}>
+          让 AI 处理 80% 的繁琐工作（如信息提取、格式转换、初稿撰写），释放人类精力。
+        </div>
+      </Sticker>
+      <Sticker rotation={-2}>
+        <div style={{ fontSize: 44, fontWeight: 900, color: '#000', marginBottom: 15 }}>2. 辅助复杂思考 🧠</div>
+        <div style={{ fontSize: 32, fontWeight: 700, color: '#555' }}>
+          作为 Brainstorming 伙伴，提供多维度视角，突破思维局限，提升决策质量。
+        </div>
+      </Sticker>
+      <Sticker rotation={1}>
+        <div style={{ fontSize: 44, fontWeight: 900, color: '#000', marginBottom: 15 }}>3. 闭环反馈优化 🔄</div>
+        <div style={{ fontSize: 32, fontWeight: 700, color: '#555' }}>
+          建立从执行到评估的闭环，利用反馈数据不断迭代 Prompt 和流程。
+        </div>
+      </Sticker>
+    </div>
+  </PageLayout>
+);
+
 // ============================================
 // Root
 // ============================================
@@ -343,6 +373,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="p9-admin" component={P9_Admin} durationInFrames={1} fps={30} width={1080} height={1440} />
       <Composition id="p10-trace" component={P10_Langfuse} durationInFrames={1} fps={30} width={1080} height={1440} />
       <Composition id="p11-conclusion" component={P11_Conclusion} durationInFrames={1} fps={30} width={1080} height={1440} />
+      <Composition id="p12-ai-efficiency" component={P12_AIEfficiency} durationInFrames={1} fps={30} width={1080} height={1440} />
     </>
   );
 };
